@@ -7,5 +7,5 @@ any code.
 """
 
 def foo(x, y):
-  if x == y: return True
-	else: return False
+    if x == y: return True
+    else: return False

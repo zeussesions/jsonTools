@@ -1,17 +1,19 @@
-"""
-This template is the framework for creating and distributing
-packages on the official Python Package Index (or PyPi).
-
-The following os.system commands will help you compile your 
-project into a "dist" file for distribution.
-
-Created by @IreTheKID
-"""
-
 import os
 
-os.system('pip install --upgrade pip')
-os.system('pip install wheel')
-os.system('pip install twine')
-os.system('python example_project/setup.py sdist bdist_wheel')
-os.system('twine upload dist/*')
+# os.system('pip install --upgrade pip')
+# os.system('pip install wheel')
+# os.system('pip install twine')
+# os.system('python example_project/setup.py sdist bdist_wheel')
+# os.system('twine upload dist/*')
+
+from src.json_tools.jsonTools import JsonTools
+
+j = JsonTools()
+
+j.connect("newDB.json")
+j.dump_sample()
+data = j.load_to_dict()
+print(data)
+
+# j.dump_sample()
+# print(j.db)

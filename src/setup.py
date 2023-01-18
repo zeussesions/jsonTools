@@ -1,4 +1,5 @@
 import setuptools
+from json_tools import jsonTools
 
 with open("README.md", "r") as fhandle:
     long_description = fhandle.read() # Your README.md file will be used as the long description!
